@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store';
 
-export const AppActionTypes = {
-  CounterIncrement : '[App] Counter Increment'
+export enum AppActionTypes {
+  CounterIncrement = '[App] Counter Increment'
 }
 
 export class CounterIncrementAction implements Action {

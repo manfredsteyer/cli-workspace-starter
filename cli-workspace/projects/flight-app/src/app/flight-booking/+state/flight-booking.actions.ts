@@ -1,13 +1,13 @@
 import { Action } from '@ngrx/store';
 import {Flight} from '@flight-workspace/flight-api';
 
-export const FlightBookingActionTypes = {
-  LoadFlights : '[FlightBooking] Load Flights',
-  FlightsLoaded : '[FlightBooking] Flights Loaded',
-  FlightsLoadedError: '[FlightBooking] Flights Loaded Error',
-  UpdateFlight : '[FlightBooking] Update Flight',
-  FlightUpdateSuccess : '[FlightBooking] Flight Update Success',
-  FlightUpdateError: '[FlightBooking] Flight Update Error'
+export enum FlightBookingActionTypes {
+  LoadFlights = '[FlightBooking] Load Flights',
+  FlightsLoaded = '[FlightBooking] Flights Loaded',
+  FlightsLoadedError = '[FlightBooking] Flights Loaded Error',
+  UpdateFlight = '[FlightBooking] Update Flight',
+  FlightUpdateSuccess = '[FlightBooking] Flight Update Success',
+  FlightUpdateError = '[FlightBooking] Flight Update Error'
 }
 
 export class LoadFlights implements Action {
